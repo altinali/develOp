@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto&family=Roboto+Serif&display=swap');
+
+* {
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grup {
+    border: 1px solid red;
+}
+
+header {
+    width: 100%;
+    border: 5px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #39053163;
+    padding: 20px 50px;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+header .logo a b {
+    color: #fd003b;
+}
+
+header .logo i {
+    color: #fff;
+    font-size: 25px;
+}
+
+header .menu {
+
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.menu .menu-content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu .menu-content a:hover {
+color: #fd003b;
+}
+.menu i {
+    display: none;
+}
+
+
+/*RESPONSİVE AYARLAR*/
+/*Tablet için genişlik */
+@media screen and (min-width:768px) and (max-width:1023px) {
+header{
+    background-color: green;
+}
+header .menu{
+    position: relative;
+}
+header .menu:hover .menu-content{
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    z-index: 1;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 20px;
+}
+.menu-content a{
+    color: #000  !important;
+}
+.menu-content a{
+    color: red !important;
+}
+header .menu i{
+    display: flex;
+    font-size: 25px;
+    color: #fff;
+}
+header .menu .menu-content{
+    display: none;
+}
+
+}
+
+@media screen and (max-width:767px){
+
+    header .menu{
+        position: relative;
+    }
+    header .menu:hover .menu-content{
+        background-color: #ccc;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        z-index: 1;
+        border: 1px solid gray;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .menu-content a{
+        color: #000  !important;
+    }
+    .menu-content a{
+        color: red !important;
+    }
+    header .menu i{
+        display: flex;
+        font-size: 25px;
+        color: #fff;
+    }
+    header .menu .menu-content{
+        display: none;
+    }
+
+
+}
